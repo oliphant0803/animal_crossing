@@ -2730,7 +2730,7 @@
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+			background-image: url("images/overlay.png"), url("image_files/animal_corossing_bg.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
