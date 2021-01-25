@@ -2730,7 +2730,7 @@
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("formats/images/overlay.png"), url("image_files/animal_corossing_bg1.jpg");
+			background-image: url("formats/images/overlay.png"), url("image_files/animal_crossing_bg1.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -3085,7 +3085,7 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("formats/images/overlay.png"), url("image_files/animal_corossing_bg2.jpg");
+		background-image: url("formats/images/overlay.png"), url("image_files/animal_crossing_bg2.jpg");
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;
