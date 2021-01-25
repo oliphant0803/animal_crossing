@@ -3172,7 +3172,33 @@
 			}
 
 		}
+/* Four */
+	#four .icons {
+		font-size: 3em;
+		position: center;
+		height: 20px;
+	}
 
+	#four .icons li {
+		padding-right: 2.5em;
+	}
+
+	#four .icons li:last-child {
+		padding-right: 0;
+	}
+
+	#four a {
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		color: #f32853;
+		text-decoration: none;
+	}
+
+	#four a:active, #four a:hover {
+		color: rgb(121, 9, 9);
+	}
 /* Footer */
 
 	#footer {
@@ -3195,17 +3221,6 @@
 				color: #666;
 			}
 
-		#footer .icons {
-			font-size: 2.5em;
-		}
-
-			#footer .icons li {
-				padding-right: 2.5em;
-			}
-
-				#footer .icons li:last-child {
-					padding-right: 0;
-				}
 
 		#footer .copyright {
 			margin: 2em 0;
