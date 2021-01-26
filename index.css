@@ -77,16 +77,21 @@
 		  }
 
 	} 
+
+	.d-block {
+		opacity: 0.8;
+	}
+
 	
 	mark {
-	background-color: rgba(236, 65, 122, 0.5);
-	color: rgb(238, 230, 230);
+	background-color: rgba(146, 52, 84, 0.5);
+	color: rgb(231, 224, 224);
 	}
 	  
 	  
 
 	header p {
-		color: #aaa;
+		color: rgb(139, 137, 137);
 		position: relative;
 		margin: 0 0 1.5em 0;
 		text-transform: uppercase;
@@ -204,6 +209,7 @@
 		border-color: rgba(238, 195, 195, 0.3);
 		transition:0.5s;
 		cursor:pointer;
+		background-color:  rgba(238, 195, 195, 0.3);
 	  }
 
 	  .card:hover{
@@ -214,6 +220,7 @@
 	  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
 		transform: scale3d(1, 1, 1);
 	  }
+
 
 
 /* Footer */
