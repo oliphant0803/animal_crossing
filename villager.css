@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* Reset */
+
+	html, body, div, span, h1, h2, h3, h4, h5, h6, p, a {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+
+	body {
+		line-height: 1;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+/* Card */
+.card-wrapper {
+	margin: 5% 0;
+  }
+  
+  /* You can adjust the image size by increasing/decreasing the width, height */
+  .custom-circle-image {
+	width: 20vw; 
+	height: 20vw;
+  }
+  
+  .custom-circle-image img {
+	object-fit: cover;
+  }
+  
+  .card-title {
+	letter-spacing: 1.1px;
+  }
+  
+  .card-text {
+	font-family: MerriweatherRegular;
+	font-size: 22px;
+	line-height: initial;
+  }
+
+/* Wrapper */
+
+	body.is-touch .wrapper.style3 {
+		background-attachment: scroll;
+	}
+
+	.wrapper {
+		padding: 6em 0 4em 0;
+	}
+
+		.wrapper > .inner {
+			margin: 0 auto;
+			width: 60em;
+		}
+
+		.wrapper.style2 {
+			background-color: #f6f6f6;
+		}
+
+		.wrapper.style3 {
+			background-attachment: fixed;
+			background-image: url("formats/images/overlay.png"), url("image_files/animal_crossing_bg1.jpg");
+			background-position: center center;
+			background-size: cover;
+		}
+
+			.wrapper.style3 header.major {
+				margin-bottom: 3em;
+			}
+
+				.wrapper.style3 header.major h2 {
+					color: #ffffff;
+				}
+
+				@media screen and (max-width: 1280px) {
+
+					.wrapper.style3 header.major {
+						margin-bottom: 2em;
+					}
+
+				}
+
+		@media screen and (max-width: 980px) {
+
+			.wrapper {
+				padding: 4em 0 2em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.wrapper {
+				padding: 3em 0 1em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.wrapper {
+				padding: 2em 0 0.1em 0;
+			}
+
+		}
+/* Banner */
+
+	body.is-touch #banner {
+		background-attachment: scroll;
+	}
+
+	#banner {
+		padding: 16em 0 13em 0;
+		background-attachment: fixed;
+		background-image: url("formats/images/overlay.png"), url("image_files/animal_crossing_bg3.jpg");
+		background-position: center top;
+		background-size: cover;
+		line-height: 1.75;
+		text-align: center;
+	}
+
+		#banner:last-child {
+			margin-bottom: 0;
+		}
+
+		#banner h2 {
+			color: #ffffff;
+			display: inline-block;
+			font-size: 3.5em;
+			line-height: 1.35;
+			margin-bottom: 0.5em;
+		}
+
+		#banner p {
+			color: #aaa;
+			font-size: 1.5em;
+			margin-bottom: 1.75em;
+			text-transform: uppercase;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 14em 0 11em 0;
+			}
+
+				#banner h2 {
+					font-size: 2.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 9em 0 7em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 6em 2em 6em 2em;
+			}
+
+				#banner br {
+					display: none;
+				}
+
+				#banner h2 {
+					font-size: 2.25em;
+				}
+
+				#banner p {
+					font-size: 1.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 4em 2em 4em 2em;
+			}
+
+		}
+
+/* Footer */
+	#footer .icons {
+		font-size: 1.5em;
+		position: center;
+		height: 20px;
+	}
+
+	#footer .icons li {
+		padding-right: 1.5em;
+	}
+
+	#footer .icons li:last-child {
+		padding-right: 0;
+	}
+
+	#footer .icons a {
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		color: #f32853;
+		text-decoration: none;
+	}
+
+	#footer .icons a:active, #footer .icons a:hover {
+		color: rgb(121, 9, 9);
+	}
+
+	
