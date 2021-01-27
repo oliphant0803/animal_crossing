@@ -10,14 +10,11 @@
 		line-height: 2em;
 	}
 
-	a {
-		text-decoration: underline;
-		color: #f32853;
-	}
 
-		a:hover {
-			text-decoration: none;
-		}
+	a:hover {
+		text-decoration: none;
+		text-decoration: underline;
+	}
 
 	p {
 		margin: 0 0 2em 0;
@@ -58,6 +55,7 @@
 		text-align: center;
 	}
 
+
 	#two {
 		padding-left: 10rem;
 		padding-right: 10rem;
@@ -75,25 +73,25 @@
 		  }
 
 	} 
+
+	.d-block {
+		opacity: 0.8;
+	}
+
 	
 	mark {
-	background-color: rgba(236, 65, 122, 0.5);
-	color: rgb(238, 230, 230);
+	background-color: rgba(146, 52, 84, 0.5);
+	color: rgb(231, 224, 224);
 	}
 	  
 	  
 
 	header p {
-		color: #aaa;
+		color: rgb(139, 137, 137);
 		position: relative;
 		margin: 0 0 1.5em 0;
-		text-transform: uppercase;
 	}
 
-	.row > * {
-		padding: 0 0 0 4em;
-		width: 50%;
-	}
 
 	ul.icons li {
 		display: inline-block;
@@ -118,6 +116,10 @@
 
 	body.is-touch #banner {
 		background-attachment: scroll;
+	}
+	
+	#banner button{
+		background-color:  rgba(189, 13, 51, 0.877);
 	}
 
 	#banner {
@@ -165,20 +167,7 @@
 			}
 
 	}
-
-/* Containers */
-
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 100em;
-		min-width: 80em;
-	}		
-
+	
 /* Section Four */
 
 	.wrapper {
@@ -192,7 +181,8 @@
 		background-size: cover;
 	}
 
-	.wrapper.s2 header.major {
+	header.major {
+		margin-top: 2em;
 		margin-bottom: 3em;
 	}
 
@@ -211,146 +201,25 @@
 
 /* Cards */
 
-	.feature-grid {
-		position: relative;
-	}
+	.card{
+		padding: 0 0 4em 0;
+		border-top: none;
+		border-width: thick;
+		border-color: rgba(238, 195, 195, 0.3);
+		transition:0.5s;
+		cursor:pointer;
+		background-color:  rgba(238, 195, 195, 0.3);
+	  }
 
-	.feature-grid:after {
-		clear: both;
-		content: '';
-		display: block;
-	}
+	  .card:hover{
+		transform: scale(1.05);
+		box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+	  }
+	  
+	  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+		transform: scale3d(1, 1, 1);
+	  }
 
-	.feature-grid .feature {
-		display: inline-block;
-		float: left;
-		margin-bottom: 3em;
-		width: 50%;
-	}
-
-	.feature-grid .feature .content {
-		width: 60%;
-	}
-
-	.feature-grid .feature .image {
-		width: 30%;
-	}
-
-	.feature-grid .feature .image img {
-		display: inline;
-		max-width: 100%;
-	}
-
-	.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
-		float: right;
-		margin-right: 5%;
-		text-align: right;
-	}
-
-	.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
-		float: left;
-		margin-left: 5%;
-		text-align: left;
-	}
-
-	@media screen and (max-width: 1280px) {
-
-		.feature-grid .feature {
-			margin-bottom: 2em;
-		}
-
-	}
-
-	@media screen and (max-width: 980px) {
-
-		.feature-grid .feature {
-			display: block;
-			width: 100%;
-		}
-
-		.feature-grid .feature .content {
-			width: 65%;
-		}
-
-		.feature-grid .feature .image {
-			margin-left: 0 !important;
-			margin-right: 0 !important;
-		}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		.feature-grid .feature {
-			margin-bottom: 1em;
-		}
-
-	}
-
-	@media screen and (max-width: 480px) {
-
-		.feature-grid .feature .content,
-		.feature-grid .feature .image {
-			display: block;
-			margin-left: 0 !important;
-			margin-right: 0 !important;
-			text-align: center !important;
-			width: 100%;
-		}
-
-		.feature-grid .feature .image {
-			margin-bottom: 1em;
-		}
-
-	}
-
-		
-
-/* Image */
-
-	.image {
-		border-radius: 4px;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
-
-		.image img {
-			border-radius: 4px;
-			display: block;
-		}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-		.image.fit img {
-			width: 100%;
-		}
-
-		.image.rounded {
-			border-radius: 100%;
-		}
-
-		.image.rounded img {
-			border: solid 0.5em rgba(144, 144, 144, 0.25);
-			border-radius: 100%;
-		}
-
-		.image.captioned {
-			border-radius: 0;
-			margin-bottom: 4em;
-		}
-
-
-		.image.captioned h3 {
-			background-color: #fff;
-			box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
-			display: block;
-			padding: 2em 1em;
-		}
 
 
 /* Footer */
@@ -380,6 +249,7 @@
 	#footer .icons a:active, #footer .icons a:hover {
 		color: rgb(121, 9, 9);
 	}
+
 
 	
 
