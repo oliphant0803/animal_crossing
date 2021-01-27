@@ -10,7 +10,6 @@
 		line-height: 2em;
 	}
 
-
 	a:hover {
 		text-decoration: none;
 		text-decoration: underline;
@@ -27,8 +26,6 @@
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
 	}
-
-
 
 	h2 {
 		font-size: 1.75em;
@@ -77,19 +74,12 @@
 		  }
 
 	}
-	  
-	  
-
+	    
 	header p {
 		color: #aaa;
 		position: relative;
 		margin: 0 0 1.5em 0;
 		text-transform: uppercase;
-	}
-
-	.row > * {
-		padding: 0 0 0 4em;
-		width: 50%;
 	}
 
 	ul.icons li {
@@ -112,7 +102,6 @@
 	}
 
 /* Banner */
-
 
 	.banner h2 {
 		color: #ffffff;
@@ -137,7 +126,6 @@
 		width: 100%;
 		overflow: hidden;
 	  }
-
 
 	.banner video {
 		position: absolute;
@@ -169,17 +157,13 @@
 		z-index: 1;
 	  }
 
-
 	@media screen and (max-width: 736px) {
-
 		.banner {
 			padding: 6em 2em 6em 2em;
 		}
-
 		.banner h2 {
 			font-size: 1.25em;
 		}
-
 	}
 
 	.banner button{
@@ -256,21 +240,17 @@
 	}
 
 	@media screen and (max-width: 980px) {
-
 		.feature-grid .feature {
 			display: block;
 			width: 100%;
 		}
-
 		.feature-grid .feature .content {
 			width: 65%;
 		}
-
 		.feature-grid .feature .image {
 			margin-left: 0 !important;
 			margin-right: 0 !important;
 		}
-
 	}
 
 	@media screen and (max-width: 736px) {
@@ -282,7 +262,6 @@
 	}
 
 	@media screen and (max-width: 480px) {
-
 		.feature-grid .feature .content,
 		.feature-grid .feature .image {
 			display: block;
@@ -291,11 +270,9 @@
 			text-align: center !important;
 			width: 100%;
 		}
-
 		.feature-grid .feature .image {
 			margin-bottom: 1em;
 		}
-
 	}
 
 		
@@ -365,6 +342,16 @@
 		}
 	}
 
+	@media(max-width:480px) {
+		.carousel-caption p{
+			margin-left: 2rem;
+			margin-right: 2rem; 
+			font-size: smaller;
+		}
+
+	}
+
+
 	#image-caption{
 		position: relative;
 		text-align: right;
@@ -376,13 +363,13 @@
 	}
 	
 	@media(max-width:980px) {
-		#image-caption {
-			width: 3rem;
-			margin-top: -1rem;
+		#image-caption img{
+			width: 5rem;
+			margin-top: -2rem;
 		}
 
 	}
-	
+
 	#three i {
 		background-color: rgb(223, 56, 89);
 		padding: 1.4rem
@@ -411,6 +398,12 @@
 		padding-right: 0;
 	}
 
+	@media(max-width:480px) {
+		#footer .icons li {
+			padding-right: 0em;
+		}
+	}
+
 	#footer .icons a {
 		-moz-transition: color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out;
@@ -422,6 +415,38 @@
 
 	#footer .icons a:active, #footer .icons a:hover {
 		color: rgb(121, 9, 9);
+	}
+
+
+	/*for Galaxy S5 or smaller*/
+	@media(max-width:360px) {
+		.banner button{
+			background-color: transparent;
+			width: 6rem;
+			height: 6rem;
+			border-color: rgba(236, 228, 231, 0.5);
+			border-width: 5px;
+		}
+	}
+
+	/*for galaxy fold or smaller*/
+	@media(max-width:280px) {
+		.carousel-caption p{
+			margin-left: 0rem;
+			margin-right: 0rem; 
+		}
+		#footer .icons li {
+			margin-right: -2rem;
+			margin-left: -2rem;
+			padding-right: 4rem;
+		}
+		.banner button{
+			background-color: transparent;
+			width: 6rem;
+			height: 6rem;
+			border-color: rgba(236, 228, 231, 0.5);
+			border-width: 5px;
+		}
 	}
 
 	

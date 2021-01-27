@@ -55,10 +55,6 @@
 		text-align: center;
 	}
 
-	#one .container .row > *{
-		padding: 0 0 0 4em;
-		width: 50%;
-	}
 
 	#two {
 		padding-left: 10rem;
