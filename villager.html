@@ -5,193 +5,240 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>animal-crossing</title>
+        <title>animal-crossing-villager</title>
         <!--style from bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- style -->
-		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="villager.css">
+		
     </head>
 
-    <body class="landing">
+    <body>
         <!--Navbar section-->
         
 	  
 	  <nav class="navbar navbar-expand-xl navbar-light bg-light">
-		<a class="navbar-brand" href="#">
-			<img src="image_files/Nintendo-Logo.png" width="100" height="50" class="d-inline-block align-top" alt="">
-		  </a>
+		<a class="navbar-brand" href="index.html"><img src="image_files/Nintendo-Logo.png" width="100" height="50" class="d-inline-block align-top" alt=""></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-			  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-link" href="index.html">Home </a>
 			</li>
 			<li class="nav-item active">
-			  <a class="nav-link" href="villager.html">Villager</a>
+			  <a class="nav-link" href="villager.html">Villager<span class="sr-only">(current)</span></a>
 			</li>
 		  </ul>
 		</div>
 	  </nav>
       
       <!-- Banner -->
-			<section id="banner">
-				<h2>Welcome to the Island</h2>
-				<p>Life's a journey, <br /> it ain't pass or fail.</p>
-				<ul class="actions">
-					<li><a href="https://animal-crossing.com/" class="button special big">Official Website</a></li>
-				</ul>
-			</section>
-
-			<!-- Section One -->
-				<section id="one" class="wrapper style1">
-					<div class="container 75%">
-						<div class="row 200%">
-							<div class="6u 12u$(medium)">
-								<header class="major">
-									<h2>Animal Corssing: New Horizons</h2>
-									<p><p>Life's a journey, it ain't pass or fail.</p></p>
-								</header>
-							</div>
-							<div class="6u$ 12u$(medium)">
-								<p>Animal Crossing[a] is a social simulation video game series developed and published by Nintendo and created by Katsuya Eguchi and Hisashi Nogami.</p>
-                				<p>In Animal Crossing, the player character is a human who lives in a village inhabited by various anthropomorphic animals, carrying out various activities such as fishing, bug catching, and fossil hunting. </p>
-								<p>The series is notable for its open-ended gameplay and extensive use of the video game console's internal clock and calendar to simulate real passage of time.</p>
-							</div>
-						</div>
+		<div class="banner py-5 text-center">
+			<div class="overlay"></div>
+  			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    			<source src="animal_crossing_friends.mp4" type="video/mp4">
+ 			</video>
+			<div class="container py-5">
+			<div class="row">
+				<div class="col-md-6 text-center"> 
+					<ul class="actions play">
+						<li><a href="https://www.youtube.com/watch?v=_3YNL0OWio0&ab_channel=Nintendo"><button type="button" class="btn-danger btn-lg rounded-circle data-toggle="tooltip" data-placement="top" title="Watch Full Video""><i class="fa fa-play fa-2x" aria-hidden="true"></i></button></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h2 >Meet new friends</h2>
+					<p>All New Horizons Villagers Listed.</p>
+				</div>
+				
+			</div>
+			</div>
+		</div>	
+<!-- Section One -->
+		<section id="one", class="wrapper">
+			<div class="container">
+				<div>
+					<div>
+						<header class="major">
+							<h2 style="text-align:left">Who are they?</h2>
+							<p style="text-align:left">Types of villiagers in Animal Crossing</p>
+						</header>
 					</div>
-				</section>
-
-
-			<!-- Section Two -->
-
-				<!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-<section class="about-cards-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 card-wrapper">
-        <div class="card border-0">
-          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-            <img class="w-100 h-100" src="https://source.unsplash.com/910x592" alt="Card image cap">
-          </div>
-          <div class="card-body text-center mt-4">
-            <h3 class="text-uppercase card-title">Our Facilities</h3>
-            <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 card-wrapper">
-        <div class="card border-0">
-          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-            <img class="w-100 h-100" src="https://source.unsplash.com/1230x802" alt="Card image cap">
-          </div>
-          <div class="card-body text-center mt-4">
-            <h3 class="text-uppercase card-title">Our Research</h3>
-            <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 card-wrapper">
-        <div class="card border-0">
-          <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-            <img class="w-100 h-100" src="https://source.unsplash.com/1230x794" alt="Card image cap">
-          </div>
-          <div class="card-body text-center mt-4">
-            <h3 class="text-uppercase card-title">Our Expertise</h3>
-            <p class="card-text">A short caption detailing an aspect of the brand which is worth mentioning.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section> -->
-
-			<!-- Section Three -->
-			<section id="three" class="wrapper s1">
-				<div class="container">
-					<header class="major special">
-						<h2>Card section</h2>
-						<p>caption for card section</p>
-					</header>
-					<div class="feature-grid">
-						<div class="feature">
-							<div class="image rounded"><img src="placeholder.png"  /></div>
-							<div class="content">
-								<header>
-									<h4>Card 1</h4>
-									<p>caption for card one</p>
-								</header>
-								<p>Paragraph for card 1</p>
-			  <ul class="actions">
-				<li><a href="https://animal-crossing.com/"><button type="button" class="btn btn-secondary">Read More</button></a></li>
-					  </ul>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image rounded"><img src="placeholder.png"  /></div>
-							<div class="content">
-								<header>
-									<h4>Card 2</h4>
-									<p>caption for card 2</p>
-								</header>
-								<p>Paragraph for card 2.</p>
-			  <ul class="actions">
-				<li><a href="https://animal-crossing.com/"><button type="button" class="btn btn-secondary">Read More</button></a></li>
-					  </ul>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image rounded"><img src="placeholder.png"  /></div>
-							<div class="content">
-								<header>
-									<h4>Card 3</h4>
-									<p>Caption for card 3</p>
-								</header>
-								<p>Pragraph for card 3.</p>
-			  <ul class="actions">
-				<li><a href="https://animal-crossing.com/"><button type="button" class="btn btn-secondary">Read More</button></a></li>
-					  </ul>
-							</div>
-						</div>
-						<div class="feature">
-							<div class="image rounded"><img src="placeholder.png"  /></div>
-							<div class="content">
-								<header>
-									<h4>Card 4</h4>
-									<p>Caption for card 4</p>
-								</header>
-								<p>Paragraph for card 4</p>
-			  <ul class="actions">
-				<li><a href="https://animal-crossing.com/"><button type="button" class="btn btn-secondary">Read More</button></a></li>
-					  </ul>
-							</div>
-						</div>
+					<div>
+						<ul class="list-unstyled">
+							<li ><p style="text-align:left"><strong>Snooty and Cranky</strong> villagers can come off snobbish, arrogant, and hostile towards other characters and the player, over time, they can warm up, but still appear somewhat arrogant.</p></li>
+							<li ><p style="text-align:left"><strong>Sisterly and Smug</strong> villagers will come off as considerate and caring towards the player and other villagers, almost as parental-like figures. In New Leaf, they will almost always give the player medicine when they have been stung by a bee.</p></li>
+							<li ><p style="text-align:left"><strong>Normal and Lazy</strong> villagers appear very calm for the majority, but are also very kind and caring. They will usually get along with the player and other villagers for the most part.</p></li>
+							<li ><p style="text-align:left"><strong>Peppy and Jock</strong> villagers are typically friendly as well, but can also be somewhat childish and competitive.</p></li>
+						  </ul>	
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-		<!-- Section Four -->
-			<section id="four" class="wrapper s2">
-				<div class="container">
-					<header class="major">
-						<h2>blank</h2>
-						<p>blank</p>
-					</header>
+<!-- Section Two -->
+		<section id="two" class="wrapper s1">
+			<div class="container">
+				<header class="major special">
+					<h2>villiagers</h2>
+					<p>cutest villagers on my island</p>
+				</header>
+				<div class="feature-grid">
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Filbert.png"/></div>
+						<div class="content">
+							<header>
+								<h4>Filbert</h4>
+								<p>Personality: <strong>Lazy</strong></p>
+								<p>Species: <strong>Squirrel</strong></p>
+							</header>
+							<p style="text-align: left;">As a lazy villager, Filbert will be friendly and easy to get along with due to his laid back lifestyle. Like all lazy villagers, he has a love of food and relaxing. He will enjoy partaking in the usual hobbies, usually for relaxing reasons or for food, like when fishing. Filbert will get along well with other villagers, but may offend or confuse jock villagers, who have a lifestyle of exercise and fitness, which conflicts with the lazy lifestyle of relaxing and food.</p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Filbert"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Tammy.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Tammy</h4>
+								<p>Personality: <strong>Sisterly</strong></p>
+								<p>Species: <strong>Cub</strong></p>
+							</header>
+							<p style="text-align: left;">Tammy is a sisterly villager. When befriended, she will give the player fighting tips and teach them ways to relax. Tammy will also give the player medicine if they are stung by a bee. Like all sisterly villagers, Tammy is tough, but she will still care deeply about her appearance. Tammy has a tendency to stay up very late at night. Developing friendships with sisterly villagers is simple due to her caring and protective nature.</p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Tammy"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Carmen.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Carmen</h4>
+								<p>Personality: <strong>Peppy</strong></p>
+								<p>Species: <strong>Rabbit</strong></p>
+							</header>
+							<p style="text-align: left;">Peppy villagers appear to be in a good mood often and are easy to become friends with. As a peppy villager, Carmen will have the tendency to over-react in conversations about trivial subjects, and will usually be over-excited to see the player or other villagers. Sje will rarely be discouraged from doing anything. </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Carmen_(rabbit)"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Dom.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Dom</h4>
+								<p>Personality: <strong>Jock</strong></p>
+								<p>Species: <strong>Sheep</strong></p>
+							</header>
+							<p style="text-align: left;">Dom has a jock personality and has a great interest in sports and bodybuilding. Jock villagers are hyperactive and motivated but often come across as egotistical and dense. As a jock villager, Dom is very interested in his hobby, and may compete against the player at catching bugs and fish. </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Dom"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Freya.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Freya</h4>
+								<p>Personality: <strong>Snooty</strong></p>
+								<p>Species: <strong>Wolf</strong></p>
+							</header>
+							<p style="text-align: left;">Freya has a snooty personality, which means she loves make-up and gossiping. As a snooty villager, Freya will first appear rude and arrogant towards the player, often talking about herself and her own experiences. She also speaks about the style and appearance of other villagers, usually other female villagers such as normal, peppy, and other snooty villagers. </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Freya"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Julian.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Julian</h4>
+								<p>Personality: <strong>Smug</strong></p>
+								<p>Species: <strong>Horse</strong></p>
+							</header>
+							<p style="text-align: left;"> Smug villagers are very polite, kind, and gentleman-like. As a smug villager, Julian will get along easily with other villagers. Smug villagers get along well with most villagers, their personality appearing to be a mix of the other personality types. As a smug villager he will stroke his ego from time to time, going on about how cool he is. </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Julian"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Poppy.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Poppy</h4>
+								<p>Personality: <strong>Normal</strong></p>
+								<p>Species: <strong>Squirrel</strong></p>
+							</header>
+							<p style="text-align: left;"> Poppy has a normal personality, and frequently acts kind towards the player. Normal villagers generally get along well with lazy, peppy, smug, snooty and other normal villagers. Poppy may conflict with cranky and sisterly villagers. As a normal villager, Poppy will usually wake up at 6:00 am and is easier to befriend than most. </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Poppy"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+
+					<div class="feature">
+						<div class="image rounded"><img src="image_files/Biff.png"  /></div>
+						<div class="content">
+							<header>
+								<h4>Biff</h4>
+								<p>Personality: <strong>Jock</strong></p>
+								<p>Species: <strong>Hippo</strong></p>
+							</header>
+							<p style="text-align: left;"> Biff has a jock personality and has a great interest in sports and bodybuilding. Jock villagers are hyperactive and motivated but often come across as egotistical and dense. As a jock villager, Biff is very interested in his hobby, and may compete against the player at catching bugs and fish.  </p>
+							<ul class="actions"><li><a href="https://animalcrossing.fandom.com/wiki/Biff"><button type="button" class="btn btn-secondary">Read More</button></a></li></ul>
+						</div>
+					</div>
+					
+					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-	<!-- Footer section-->
+<!--Section Three-->
+		<section id="three" class="wrapper"> 
+			<div class="container">
+				<header class="major special">
+					<h2>Letters from villagers</h2>
+				</header>
+				<div id="letter" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="carousel-caption">
+								<p>To my pal, </p>
+								<p>I have a hunger... and while I normally just grab a snack to fill up, this hunger will only be satisfied by exotic foods from far-off lands. So, I am not a wanderer! </p>
+								<p>Snackily yours, Filbert </p>
+							</div>
+							<div id="image-caption"><img src="image_files/Filbert.png"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="carousel-caption">
+								<p>See you around,</p>
+								<p>It's hard to tell you good-bye. At the very least, I want you to have this picture before I leave your life for good. We will always remain friends! I'll miss you!</p>
+								<p>Tears streaming, Julian</p>
+							</div>
+							<div id="image-caption"><img src="image_files/Julian.png"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="carousel-caption">
+								<p>Trendsetter, </p> 
+								<p>Cute things! That's all I care about! And this time I found the cutest of the cute! This just HAS to be the next big thing in town. And I'm trusting you to start the fad! </p> 
+								<p>Please use it! Dom</p> 
+							</div>
+							<div id="image-caption"><img src="image_files/Dom.png"></div>
+						</div>
+					</div> <a class="carousel-control-prev" href="#letter" data-slide="prev"> <i class='fa fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#letter" data-slide="next"> <i class='fa fa-arrow-right'></i> </a>
+				</div>
+			</div>
+		</section>	
+<!-- Footer section-->
 	<footer id= "footer" class="bg-white">
 		<div class="container py-5">
 		  <div class="row py-4">
 			
 			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<h6 class="text-uppercase font-weight-bold mb-4">Follow</h6>
 				<p class="font-italic text-muted">"Oh this ain't good-bye. I will see you again. That's how it goes whene'er yer my friend."
 				  -Kapp'n</p>
 				<p class="font-italic text-muted">Visit here for more contents.</p>
@@ -204,7 +251,7 @@
 			<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
 			  <h6 class="text-uppercase font-weight-bold mb-4">Sources</h6>
 			  <ul class="list-unstyled mb-0">
-				<li class="mb-2"><a href="https://animal-crossing.com/" class="text-muted">Nintendo Offcial</a></li>
+				<li class="mb-2"><a href="https://animal-crossing.com/" class="text-muted">Nintendo</a></li>
 				<li class="mb-2"><a href="https://animalcrossing.fandom.com/wiki/Villager_list_(New_Horizons)" class="text-muted">Fandom</a></li>
 				<li class="mb-2"><a href="https://ac-pocketcamp.com/en-US" class="text-muted">Pocketcamp</a></li>
 			  </ul>
@@ -220,6 +267,7 @@
 			</div>
 
 			<div class="col-lg-4 col-md-4 mb-lg-0">
+				<h6 class="text-uppercase font-weight-bold mb-4">Since March 2020</h6>
 				<p class="font-italic text-muted"><strong>One</strong> year aniversary for Animal Crossing New Horizons - From March 2020</p>
 				<a  href="https://www.nintendo.com/en_CA/">
 					<img src="image_files/Nintendo-Logo.png" width="100" height="50" class="d-inline-block align-top" >

@@ -94,7 +94,6 @@
 		color: rgb(139, 137, 137);
 		position: relative;
 		margin: 0 0 1.5em 0;
-		text-transform: uppercase;
 	}
 
 
@@ -121,6 +120,10 @@
 
 	body.is-touch #banner {
 		background-attachment: scroll;
+	}
+	
+	#banner button{
+		background-color:  rgba(189, 13, 51, 0.877);
 	}
 
 	#banner {
