@@ -1,4 +1,7 @@
+/* FontAwesome for working BootSnippet :> */
+
 @charset "UTF-8";
+
 /* Fonts*/
 
 	body {
@@ -187,119 +190,119 @@
 
 	}
 
-/* Cards */
-
-	.feature-grid {
-		position: relative;
-	}
-
-	.feature-grid:after {
-		clear: both;
-		content: '';
-		display: block;
-	}
-
-	.feature-grid .feature {
-		display: inline-block;
-		float: left;
-		margin-bottom: 3em;
-		width: 50%;
-	}
-
-	.feature-grid .feature .content {
-		width: 60%;
-	}
-
-	.feature-grid .feature .image {
-		width: 30%;
-	}
-
-	.feature-grid .feature .image img {
-		display: inline;
-		max-width: 100%;
-	}
-
-	.feature-grid .feature:nth-child(odd) .content, .feature-grid .feature:nth-child(odd) .image {
-		float: right;
-		margin-right: 5%;
-		text-align: right;
-	}
-
-	.feature-grid .feature:nth-child(even) .content, .feature-grid .feature:nth-child(even) .image {
-		float: left;
-		margin-left: 5%;
-		text-align: left;
-	}
-
-	@media screen and (max-width: 1280px) {
-
-		.feature-grid .feature {
-			margin-bottom: 2em;
-		}
-
-	}
-
-	@media screen and (max-width: 980px) {
-		.feature-grid .feature {
-			display: block;
-			width: 100%;
-		}
-		.feature-grid .feature .content {
-			width: 65%;
-		}
-		.feature-grid .feature .image {
-			margin-left: 0 !important;
-			margin-right: 0 !important;
-		}
-	}
-
-	@media screen and (max-width: 736px) {
-
-		.feature-grid .feature {
-			margin-bottom: 1em;
-		}
-
-	}
-
-	@media screen and (max-width: 480px) {
-		.feature-grid .feature .content,
-		.feature-grid .feature .image {
-			display: block;
-			margin-left: 0 !important;
-			margin-right: 0 !important;
-			text-align: center !important;
-			width: 100%;
-		}
-		.feature-grid .feature .image {
-			margin-bottom: 1em;
-		}
-	}
-
 		
 
-/* Image */
+/* Cards */
+  
+  	.image-flip img{
+    	border: solid 0.5em rgba(238, 195, 195, 0.5);
+		border-radius: 100%;
+  	}
 
-	.image {
-		border-radius: 4px;
-		border: 0;
-		display: inline-block;
+	#two {
+		background: #eee !important;
+	}
+
+	#two {
+		padding: 60px 0;
+	}
+
+
+	#two .card {
+		border: none;
+		background: #ffffff;
+	}
+
+
+	.image-flip:hover .backside,.image-flip.hover .backside {
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		border-radius: .25rem;
+	}
+
+	.image-flip:hover .frontside,.image-flip.hover .frontside {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.mainflip {
+		-webkit-transition: 1s;
+		-webkit-transform-style: preserve-3d;
+		-ms-transition: 1s;
+		-moz-transition: 1s;
+		-moz-transform: perspective(1000px);
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		transition: 1s;
+		transform-style: preserve-3d;
 		position: relative;
 	}
 
-	.image img {
-		border-radius: 4px;
-		display: block;
+	.frontside {
+		position: relative;
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		z-index: 2;
+		margin-bottom: 30px;
 	}
 
-	.image.rounded {
-		border-radius: 100%;
+	.backside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: white;
+		-webkit-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-180deg);
+		-o-transform: rotateY(-180deg);
+		-ms-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+		-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+		-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+		box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
 	}
 
-	.image.rounded img {
-		border: solid 0.5em rgba(238, 195, 195, 0.5);
-		border-radius: 100%;
+	.frontside,.backside {
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: 1s;
+		-webkit-transform-style: preserve-3d;
+		-moz-transition: 1s;
+		-moz-transform-style: preserve-3d;
+		-o-transition: 1s;
+		-o-transform-style: preserve-3d;
+		-ms-transition: 1s;
+		-ms-transform-style: preserve-3d;
+		transition: 1s;
+		transform-style: preserve-3d;
 	}
 
+	.frontside .card,.backside .card {
+		min-height: 320px;
+	}
+
+	.btn{
+		background-color:rgba(238, 195, 195);
+		border-color:rgba(194, 144, 144, 0.911);
+	}
+
+	.frontside .card .card-title,.backside .card .card-title {
+		color: rgb(243, 172, 172) !important;
+	}
+
+	.frontside .card .card-body img {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+	}
+
+/* Letter */
 	#letter {
 		background: linear-gradient(45deg, antiquewhite 25%, #fccfcf9c 75%);
 		max-width: 900px;

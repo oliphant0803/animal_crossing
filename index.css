@@ -186,7 +186,7 @@
 		margin-bottom: 3em;
 	}
 
-	.wrapper.s2 header.major h2 {
+	.wrapper.s2 header.major h2, .wrapper.s2 header.major p{
 		color: #fae7e7;
 	}
 
