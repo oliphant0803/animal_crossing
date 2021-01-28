@@ -74,6 +74,11 @@
 
 	} 
 
+	#three .card img{
+		opacity: 0.8;
+	}
+
+
 	.d-block {
 		opacity: 0.8;
 	}
